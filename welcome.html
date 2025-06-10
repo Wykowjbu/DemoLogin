@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 50px; }
+        .container { max-width: 400px; margin: auto; }
+        .success { color: green; }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h2>Chào mừng bạn, <span th:text="${username}"></span>!</h2>
+    <p class="success">Đăng nhập thành công!</p>
+    <a th:href="@{/}">Đăng nhập lại</a>
+</div>
+</body>
+</html>
